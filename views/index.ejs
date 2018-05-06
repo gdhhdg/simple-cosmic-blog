@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <% data.objects.forEach(function (post) { %>
+
+  <h3>
+      <%= post./*your Metafield Name*/ %>
+  </h3>
+  <h3>
+      <%= post.metadata./*your Metafield Name*/ %>
+  </h3>
+  <h3>
+    <img src="<%= post.metadata./*your Metafield Name*/.url%>" alt="">
+  </h3>
+
+  <% })%>
+
+  </body>
+</html>
